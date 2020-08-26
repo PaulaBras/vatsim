@@ -1,0 +1,276 @@
+\documentclass[10pt,landscape,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Segoe UI}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[landscape,top=0cm,bottom=1cm,right=1cm,left=0cm,noheadfoot,bindingoffset=0pt,marginparwidth=0pt,marginparsep=0pt]{geometry}
+\pagestyle{empty}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{babel}
+\usepackage[en-US]{datetime2}
+
+
+
+\newlength{\Oldarrayrulewidth}
+\newcommand{\Cline}[2]{%
+  \noalign{\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
+  \noalign{\global\setlength{\arrayrulewidth}{#1}}\cline{#2}%
+  \noalign{\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
+
+
+\title{EDDL}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\setlength\extrarowheight{1pt}
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{7mm}{12mm}
+
+\begin{textblock}{2}(210, 0)
+  \includegraphics[width=30\textwidth]{VATGer-Logo-Colour}
+\end{textblock}
+
+
+\begin{textblock}{100}(100, 0)
+  \large
+  \centering
+  EDDL Quicksheet
+
+ \DTMlangsetup{showdayofmonth=false}
+  \today
+\end{textblock}
+
+
+\begin{textblock}{40}(0,15)
+\begin{table}[]
+\begin{tabular}{lcccccccccccc}
+& \multicolumn{4}{c}{\textbf{North/West departures}}                                                                                                                                                                                                                                                          & \multicolumn{7}{c}{\textbf{South/East departures}}                                                                                                                                                                                                                                                                                                                                             & \multicolumn{1}{l}{} \\ \hline
+\multicolumn{1}{|l|}{SID} & 
+\multicolumn{1}{c|}{SONEB} & 
+\multicolumn{1}{c|}{NETEX} & 
+\multicolumn{1}{c|}{MODRU} & 
+\multicolumn{1}{c||}{LMA} & 
+\multicolumn{1}{c|}{MEVEL} & 
+\multicolumn{1}{c|}{COL} & 
+\multicolumn{1}{c|}{DODEN} & 
+\multicolumn{1}{c|}{GMH} & 
+\multicolumn{1}{c|}{KUMIK} & 
+\multicolumn{1}{c|}{NUDGO} & 
+\multicolumn{1}{c|}{NVO} & 
+\multicolumn{1}{c|}{\multirow{10}{*}{\rotatebox{90}{\textbf{5000 ft}}}} \\ \cline{1-12}
+\multicolumn{1}{|l|}{RFL} & 
+\multicolumn{1}{l|}{even} & 
+\multicolumn{1}{l|}{even} & 
+\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l||}{even} & 
+\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l|}{even / odd} &
+\multicolumn{1}{r|}{} \\ \cline{1-12}
+\multicolumn{1}{|l|}{} & 
+\multicolumn{1}{r|}{\scriptsize \textless{}FL140} & 
+\multicolumn{1}{r|}{\scriptsize FL140-FL200} & 
+\multicolumn{1}{r|}{\scriptsize \textless{}FL210} & 
+\multicolumn{1}{r||}{} & 
+\multicolumn{1}{r|}{} & 
+\multicolumn{1}{r|}{} & 
+\multicolumn{1}{r|}{\scriptsize \textless{}FL250} & 
+\multicolumn{1}{r|}{\scriptsize \textgreater{}FL140} & 
+\multicolumn{1}{r|}{\scriptsize \textless{}FL150} & 
+\multicolumn{1}{r|}{\scriptsize \textgreater{}FL245} & 
+\multicolumn{1}{l|}{\scriptsize \textgreater{}FL90} & 
+\multicolumn{1}{c|}{} \\ \cline{1-12}
+\multicolumn{1}{|l|}{\textbf{05L}} & 
+\multicolumn{1}{c|}{\textbf{5J}} & 
+\multicolumn{1}{c|}{\textbf{3J}} & 
+\multicolumn{1}{c|}{\textbf{6J}} & 
+\multicolumn{1}{c||}{\textbf{6Y}} & 
+\multicolumn{1}{c|}{\textbf{8J}} & 
+\multicolumn{1}{c|}{\textbf{4J}} & 
+\multicolumn{1}{c|}{\textbf{6J}} & 
+\multicolumn{1}{c|}{\textbf{8Y}} & 
+\multicolumn{1}{c|}{\textbf{4J}} & 
+\multicolumn{1}{c|}{\textbf{4J}} & 
+\multicolumn{1}{c|}{\textbf{2Y}} & 
+\multicolumn{1}{c|}{} \\ \cline{1-12}
+\multicolumn{1}{|l|}{\textbf{05R}} & 
+\multicolumn{1}{c|}{\textbf{5Z}} & 
+\multicolumn{1}{c|}{\textbf{3Z}} & 
+\multicolumn{1}{c|}{\textbf{6Z}} & 
+\multicolumn{1}{c||}{\textbf{1Z}} & 
+\multicolumn{1}{c|}{\textbf{4Z}} & 
+\multicolumn{1}{c|}{\textbf{9Z}} & 
+\multicolumn{1}{c|}{\textbf{6Z}} & 
+\multicolumn{1}{c|}{\textbf{8Z}} & 
+\multicolumn{1}{c|}{\textbf{4Z}} & 
+\multicolumn{1}{c|}{\textbf{4Z}} & 
+\multicolumn{1}{c|}{\textbf{2Z}} & 
+\multicolumn{1}{c|}{} \\ \cline{1-12}
+\multicolumn{1}{|l|}{\textbf{23L}} & 
+\multicolumn{1}{c|}{\textbf{7T}} & 
+\multicolumn{1}{c|}{\textbf{5T}} & 
+\multicolumn{1}{c|}{\textbf{1T/1K}} & 
+\multicolumn{1}{c||}{\textbf{2T}} & 
+\multicolumn{1}{c|}{\textbf{3T}} & 
+\multicolumn{1}{c|}{\textbf{5T}} & 
+\multicolumn{1}{c|}{\textbf{9T}} & 
+\multicolumn{1}{c|}{\textbf{9T}} & 
+\multicolumn{1}{c|}{\textbf{6T}} & 
+\multicolumn{1}{c|}{\textbf{5T}} & 
+\multicolumn{1}{c|}{\textbf{1T}} & 
+\multicolumn{1}{c|}{} \\ \cline{1-12}
+\multicolumn{1}{|l|}{\textbf{23R}} & 
+\multicolumn{1}{c|}{\textbf{3H}} & 
+\multicolumn{1}{c|}{\textbf{2H}} & 
+\multicolumn{1}{c|}{\textbf{1H}} & 
+\multicolumn{1}{c||}{\textbf{2H}} & 
+\multicolumn{1}{c|}{\textbf{3H}} & 
+\multicolumn{1}{c|}{\textbf{3H}} & 
+\multicolumn{1}{c|}{\textbf{3H}} & 
+\multicolumn{1}{c|}{\textbf{3H}} & 
+\multicolumn{1}{c|}{\textbf{3H}} & 
+\multicolumn{1}{c|}{\textbf{3H}} & 
+\multicolumn{1}{c|}{\textbf{1U}} & 
+\multicolumn{1}{c|}{} \\ \cline{1-12}
+\multicolumn{1}{|l|}{} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}via RKN\\ TELNI\end{tabular}} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}No FL restr.\\ via Z282\\ DIBIR L179\end{tabular}} & 
+\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l||}{\scriptsize \begin{tabular}[c]{@{}l@{}}EDLN\end{tabular}} & 
+\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}unable: KUMIK\end{tabular}} & 
+\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}RFL 100+ use\\ MODRU\\ odd FL only on\\ Route Q760\end{tabular}} & 
+\multicolumn{1}{c|}{} \\ \hline
+
+
+\multicolumn{2}{|l}{Handoff} & 
+\multicolumn{3}{c||}{DN} & 
+\multicolumn{7}{c|}{DS} & 
+\multicolumn{1}{l}{} \\ \cline{1-12}
+\multicolumn{8}{l}{Departure interval: 5NM same direction (North/South)}
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+
+\begin{textblock}{100}(85, 80)
+\begin{table}[]
+\begin{tabular}{lllll}
+\multicolumn{5}{c}{\textbf{Precision Approach}} \\ \hline
+\multicolumn{1}{|l|}{RWY} & \multicolumn{1}{c|}{\textbf{05L}} & \multicolumn{1}{c|}{\textbf{05R}} & \multicolumn{1}{c|}{\textbf{23L}} & \multicolumn{1}{c|}{\textbf{23R}} \\ \hline
+\multicolumn{1}{|l|}{FREQ} & \multicolumn{1}{l|}{109.50} & \multicolumn{1}{l|}{111.50} & \multicolumn{1}{l|}{109.90} & \multicolumn{1}{l|}{109.30} \\
+\multicolumn{1}{|l|}{CRS} & \multicolumn{1}{l|}{052$^\circ$} & \multicolumn{1}{l|}{052$^\circ$} & \multicolumn{1}{l|}{232$^\circ$} & \multicolumn{1}{l|}{232$^\circ$} \\
+\multicolumn{1}{|l|}{FAF} & \multicolumn{1}{l|}{GESBI} & \multicolumn{1}{l|}{GESBI} & \multicolumn{1}{l|}{MISGO} & \multicolumn{1}{l|}{MISGO} \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(200,15)
+\begin{table}[]
+\begin{tabular}{llll}
+\multicolumn{4}{c}{\textbf{Communication}}                                                                                                                          \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{GND}}} & \multicolumn{1}{l|}{DC}          & \multicolumn{1}{l|}{123.77}          & \multicolumn{1}{l|}{ATIS}                   \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DC}          & \multicolumn{1}{l|}{121.775}            & \multicolumn{1}{l|}{Delivery}               \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DW}          & \multicolumn{1}{l|}{121.9}            & \multicolumn{1}{l|}{Ground}                 \\ 
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DE}          & \multicolumn{1}{l|}{121.6}            & \multicolumn{1}{l|}{Ground}                 \\ \hline
+\multicolumn{1}{|l|}{\multirow{1}{*}{{TWR}}} & \multicolumn{1}{l|}{\textbf{DT}} & \multicolumn{1}{l|}{\textbf{118.3}}   & \multicolumn{1}{l|}{\textbf{Tower}}         \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{APP}}} & \multicolumn{1}{l|}{\textbf{DA}} & \multicolumn{1}{l|}{\textbf{128.55}} & \multicolumn{1}{l|}{\textbf{DUS Pickup}} \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DF}          & \multicolumn{1}{l|}{128.50}            & \multicolumn{1}{l|}{Director}         \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DN}          & \multicolumn{1}{l|}{128.65}            & \multicolumn{1}{l|}{North Depature}         \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DS}          & \multicolumn{1}{l|}{121.35}            & \multicolumn{1}{l|}{South Depature}         \\ \hline
+\multicolumn{1}{|l|}{\multirow{9}{*}{\rotatebox{90}{CTR}}} & \multicolumn{1}{l|}{GC}          & \multicolumn{1}{l|}{135.72}          & \multicolumn{1}{l|}{Complete}              \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textbf{GP}} & \multicolumn{1}{l|}{\textbf{135.65}} & \multicolumn{1}{l|}{\textbf{Paderborn High}}  \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{GT}          & \multicolumn{1}{l|}{127.62}            & \multicolumn{1}{l|}{Taunus}             \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YM}          & \multicolumn{1}{l|}{133.85}          & \multicolumn{1}{l|}{Münster}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YR}          & \multicolumn{1}{l|}{132.62}          & \multicolumn{1}{l|}{Ruhr}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YC}          & \multicolumn{1}{l|}{133.95}          & \multicolumn{1}{l|}{Celle}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YS}          & \multicolumn{1}{l|}{131.37}          & \multicolumn{1}{l|}{Solling}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{GW}          & \multicolumn{1}{l|}{129.87}          & \multicolumn{1}{l|}{Langen Info Nord/West}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{GU}          & \multicolumn{1}{l|}{123.52}          & \multicolumn{1}{l|}{Langen Info West}          \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(0, 125)
+\begin{table}[]
+\begin{tabular}{lllllll} 
+\multicolumn{7}{c}{\textbf{Holdings}}                                                                                                                                        \\ \hline
+\multicolumn{1}{|l|}{BAM} & 
+\multicolumn{1}{l|}{BOT}   & 
+\multicolumn{1}{l|}{LMA} & 
+\multicolumn{1}{l|}{LEBTI} & 
+\multicolumn{1}{l|}{RONAD} & 
+\multicolumn{1}{l|}{LAA} &
+\multicolumn{1}{l|}{MHV} \\ \hline
+\multicolumn{1}{|l|}{3000 AMSL} & 
+\multicolumn{1}{l|}{4000 AMSL} & 
+\multicolumn{1}{l|}{4000 AMSL} & 
+\multicolumn{1}{l|}{3000 AMSL} & 
+\multicolumn{1}{l|}{4000 AMSL} & 
+\multicolumn{1}{l|}{3000 AMSL} & 
+\multicolumn{1}{l|}{2000 AMSL} \\
+\multicolumn{1}{|l|}{251$^\circ$ R} & 
+\multicolumn{1}{l|}{058$^\circ$ L} & 
+\multicolumn{1}{l|}{240$^\circ$ R} & 
+\multicolumn{1}{l|}{234$^\circ$ R} & 
+\multicolumn{1}{l|}{263$^\circ$ R} & 
+\multicolumn{1}{l|}{???$^\circ$ ?} & 
+\multicolumn{1}{l|}{???$^\circ$ ?} \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+\begin{textblock}{100}(0, 80)
+\begin{table}[]
+\begin{tabular}{llll}
+\multicolumn{4}{c}{\textbf{Handoff Levels}} \\ \hline
+\multicolumn{2}{|l|}{23 Betrieb (STAR/Trans)} & \multicolumn{2}{l|}{05 Betrieb (STAR/Trans)}\\ \hline
+\multicolumn{1}{|l}{TEBRO} & 
+\multicolumn{1}{l|}{170/170} & 
+\multicolumn{1}{l}{TEBRO} & 
+\multicolumn{1}{l|}{170/170} & 
+\multicolumn{1}{|l}{XAMOD} & 
+\multicolumn{1}{l|}{100/120} & 
+\multicolumn{1}{l}{XAMOD} & 
+\multicolumn{1}{l|}{140/140} & 
+\multicolumn{1}{|l}{DOMUX} & 
+\multicolumn{1}{l|}{100/120} & 
+\multicolumn{1}{l}{DOMUX} & 
+\multicolumn{1}{l|}{100/120} & 
+\multicolumn{1}{|l}{BIKMU} & 
+\multicolumn{1}{l|}{140/140} & 
+\multicolumn{1}{l}{BIKMU} & 
+\multicolumn{1}{l|}{140/140} & 
+\multicolumn{1}{|l}{LMA} & 
+\multicolumn{1}{l|}{120/120} &
+\multicolumn{1}{l}{LMA} & 
+\multicolumn{1}{l|}{120/120} &
+\multicolumn{1}{|l}{} & 
+\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l}{ELDAR} & 
+\multicolumn{1}{l|}{----/170} \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\end{document}

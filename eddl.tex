@@ -25,7 +25,7 @@
 
 
 \title{EDDL}
-\author{}
+\author{Paul à Brassard}
 \date{\today}
 
 \begin{document}
@@ -123,7 +123,7 @@
 \multicolumn{1}{|l|}{\textbf{23L}} & 
 \multicolumn{1}{c|}{\textbf{7T}} & 
 \multicolumn{1}{c|}{\textbf{5T}} & 
-\multicolumn{1}{c|}{\textbf{1T}/1K} & 
+\multicolumn{1}{c|}{\textbf{1T} / 1K} & 
 \multicolumn{1}{c||}{\textbf{2T}} & 
 \multicolumn{1}{c|}{\textbf{3T}} & 
 \multicolumn{1}{c|}{\textbf{5T}} & 
@@ -162,8 +162,8 @@
 
 
 \multicolumn{2}{|l}{Handoff} & 
-\multicolumn{3}{c||}{DN} & 
-\multicolumn{7}{c|}{DS} & 
+\multicolumn{3}{c||}{\textunderscore{}N\textunderscore{}APP} & 
+\multicolumn{7}{c|}{\textunderscore{}S\textunderscore{}APP} & 
 \multicolumn{1}{l}{} \\ \cline{1-12}
 \multicolumn{8}{l}{Departure interval: 5NM same direction (North/South)}
 \end{tabular}
@@ -184,28 +184,28 @@
 \end{table}
 \end{textblock}
 
-\begin{textblock}{100}(200,15)
+\begin{textblock}{100}(195,15)
 \begin{table}[]
 \begin{tabular}{llll}
 \multicolumn{4}{c}{\textbf{Communication}}                                                                                                                          \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{GND}}} & \multicolumn{1}{l|}{DC}          & \multicolumn{1}{l|}{123.77}          & \multicolumn{1}{l|}{ATIS}                   \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DC}          & \multicolumn{1}{l|}{121.775}            & \multicolumn{1}{l|}{Delivery}               \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DW}          & \multicolumn{1}{l|}{121.9}            & \multicolumn{1}{l|}{Ground}                 \\ 
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DE}          & \multicolumn{1}{l|}{121.6}            & \multicolumn{1}{l|}{Ground}                 \\ \hline
-\multicolumn{1}{|l|}{\multirow{1}{*}{{TWR}}} & \multicolumn{1}{l|}{\textbf{DT}} & \multicolumn{1}{l|}{\textbf{118.3}}   & \multicolumn{1}{l|}{\textbf{Tower}}         \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{APP}}} & \multicolumn{1}{l|}{\textbf{DA}} & \multicolumn{1}{l|}{\textbf{128.55}} & \multicolumn{1}{l|}{\textbf{DUS Pickup}} \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DF}          & \multicolumn{1}{l|}{128.50}            & \multicolumn{1}{l|}{Director}         \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DN}          & \multicolumn{1}{l|}{128.65}            & \multicolumn{1}{l|}{North Depature}         \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{DS}          & \multicolumn{1}{l|}{121.35}            & \multicolumn{1}{l|}{South Depature}         \\ \hline
-\multicolumn{1}{|l|}{\multirow{9}{*}{\rotatebox{90}{CTR}}} & \multicolumn{1}{l|}{GC}          & \multicolumn{1}{l|}{135.72}          & \multicolumn{1}{l|}{Complete}              \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textbf{GP}} & \multicolumn{1}{l|}{\textbf{135.65}} & \multicolumn{1}{l|}{\textbf{Paderborn High}}  \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{GT}          & \multicolumn{1}{l|}{127.62}            & \multicolumn{1}{l|}{Taunus}             \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YM}          & \multicolumn{1}{l|}{133.85}          & \multicolumn{1}{l|}{Münster}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YR}          & \multicolumn{1}{l|}{132.62}          & \multicolumn{1}{l|}{Ruhr}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YC}          & \multicolumn{1}{l|}{133.95}          & \multicolumn{1}{l|}{Celle}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{YS}          & \multicolumn{1}{l|}{131.37}          & \multicolumn{1}{l|}{Solling}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{GW}          & \multicolumn{1}{l|}{129.87}          & \multicolumn{1}{l|}{Langen Info Nord/West}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{GU}          & \multicolumn{1}{l|}{123.52}          & \multicolumn{1}{l|}{Langen Info West}          \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{GND}}} & \multicolumn{1}{l|}{\textunderscore{}ATIS}          & \multicolumn{1}{l|}{123.77}          & \multicolumn{1}{l|}{ATIS}                   \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}DEL}          & \multicolumn{1}{l|}{121.775}            & \multicolumn{1}{l|}{Delivery}               \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}W\textunderscore{}GND}          & \multicolumn{1}{l|}{121.9}            & \multicolumn{1}{l|}{Ground}                 \\ 
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}E\textunderscore{}GND}          & \multicolumn{1}{l|}{121.6}            & \multicolumn{1}{l|}{Ground}                 \\ \hline
+\multicolumn{1}{|l|}{\multirow{1}{*}{{TWR}}} & \multicolumn{1}{l|}{\textbf{\textunderscore{}TWR}} & \multicolumn{1}{l|}{\textbf{118.3}}   & \multicolumn{1}{l|}{\textbf{Tower}}         \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{APP}}} & \multicolumn{1}{l|}{\textbf{\textunderscore{}APP}} & \multicolumn{1}{l|}{\textbf{128.55}} & \multicolumn{1}{l|}{\textbf{DUS Pickup}} \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}F\textunderscore{}APP}          & \multicolumn{1}{l|}{128.50}            & \multicolumn{1}{l|}{Director}         \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}N\textunderscore{}APP}          & \multicolumn{1}{l|}{128.65}            & \multicolumn{1}{l|}{North Depature}         \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}S\textunderscore{}APP}          & \multicolumn{1}{l|}{121.35}            & \multicolumn{1}{l|}{South Depature}         \\ \hline
+\multicolumn{1}{|l|}{\multirow{6}{*}{\rotatebox{90}{CTR}}} & \multicolumn{1}{l|}{\textunderscore{}CTR}          & \multicolumn{1}{l|}{135.72}          & \multicolumn{1}{l|}{Complete}              \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textbf{\textunderscore{}P\textunderscore{}CTR}} & \multicolumn{1}{l|}{\textbf{135.65}} & \multicolumn{1}{l|}{\textbf{Paderborn High}}  \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}T\textunderscore{}CTR}          & \multicolumn{1}{l|}{127.625}            & \multicolumn{1}{l|}{Taunus}             \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}M\textunderscore{}CTR}          & \multicolumn{1}{l|}{133.85}          & \multicolumn{1}{l|}{Münster}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}R\textunderscore{}CTR}          & \multicolumn{1}{l|}{132.62}          & \multicolumn{1}{l|}{Ruhr}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}C\textunderscore{}CTR}          & \multicolumn{1}{l|}{133.95}          & \multicolumn{1}{l|}{Celle}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}S\textunderscore{}CTR}          & \multicolumn{1}{l|}{131.37}          & \multicolumn{1}{l|}{Solling}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}W\textunderscore{}CTR}          & \multicolumn{1}{l|}{129.87}          & \multicolumn{1}{l|}{Langen Info Nord/West}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}U\textunderscore{}CTR}          & \multicolumn{1}{l|}{123.52}          & \multicolumn{1}{l|}{Langen Info West}          \\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}
@@ -268,7 +268,7 @@
 \multicolumn{1}{|l}{} & 
 \multicolumn{1}{l|}{} & 
 \multicolumn{1}{l}{ELDAR} & 
-\multicolumn{1}{l|}{----/170} \\ \hline
+\multicolumn{1}{l|}{--- /170} \\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}

@@ -69,9 +69,9 @@
 \multicolumn{1}{c|}{NVO} & 
 \multicolumn{1}{c|}{\multirow{10}{*}{\rotatebox{90}{\textbf{5000 ft}}}} \\ \cline{1-12}
 \multicolumn{1}{|l|}{RFL} & 
+\multicolumn{1}{l|}{} & 
 \multicolumn{1}{l|}{even} & 
-\multicolumn{1}{l|}{even} & 
-\multicolumn{1}{l|}{odd} & 
+\multicolumn{1}{l|}{} & 
 \multicolumn{1}{l||}{even} & 
 \multicolumn{1}{l|}{odd} & 
 \multicolumn{1}{l|}{odd} & 
@@ -83,11 +83,11 @@
 \multicolumn{1}{r|}{} \\ \cline{1-12}
 \multicolumn{1}{|l|}{} & 
 \multicolumn{1}{r|}{\scriptsize \textgreater{}FL140} & 
-\multicolumn{1}{r|}{\scriptsize FL140-FL200} & 
+\multicolumn{1}{r|}{\scriptsize FL100-FL200} & 
 \multicolumn{1}{r|}{\scriptsize \textgreater{}FL210} & 
 \multicolumn{1}{r||}{} & 
 \multicolumn{1}{r|}{} & 
-\multicolumn{1}{r|}{} & 
+\multicolumn{1}{r|}{\scriptsize \textgreater{}FL150A@LIPMI} & 
 \multicolumn{1}{r|}{\scriptsize \textgreater{}FL250} & 
 \multicolumn{1}{r|}{\scriptsize \textless{}FL140} & 
 \multicolumn{1}{r|}{\scriptsize \textgreater{}FL150} & 
@@ -147,16 +147,16 @@
 \multicolumn{1}{c|}{\textbf{1U}} & 
 \multicolumn{1}{c|}{} \\ \cline{1-12}
 \multicolumn{1}{|l|}{} & 
-\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}via RKN\\ TELNI\end{tabular}} & 
-\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}No FL restr.\\ via Z282\\ DIBIR L179\end{tabular}} & 
-\multicolumn{1}{l|}{} & 
-\multicolumn{1}{l||}{\scriptsize \begin{tabular}[c]{@{}l@{}}EDLN\end{tabular}} & 
-\multicolumn{1}{l|}{} & 
-\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}via RKN\\ TELNI\\ BRNAV only\end{tabular}} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}No FL restr.\\ via Z282\\ DIBIR L179\\ BRNAV only\end{tabular}} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}BRNAV only\end{tabular}} & 
+\multicolumn{1}{l||}{\scriptsize \begin{tabular}[c]{@{}l@{}}EDLN\\ local IFR\end{tabular}} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}BRNAV only\end{tabular}} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}BRNAV only\\ Jet only\end{tabular}} & 
 \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}unable: KUMIK\end{tabular}} & 
 \multicolumn{1}{l|}{} & 
-\multicolumn{1}{l|}{} & 
-\multicolumn{1}{l|}{} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}BRNAV only\end{tabular}} & 
+\multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}FL rest. only\\ until NUDGO\\ BRNAV only\end{tabular}} & 
 \multicolumn{1}{l|}{\scriptsize \begin{tabular}[c]{@{}l@{}}RFL 100+ use\\ MODRU\\ odd FL only on\\ Route Q760\end{tabular}} & 
 \multicolumn{1}{c|}{} \\ \hline
 
@@ -194,47 +194,37 @@
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}E\textunderscore{}GND}          & \multicolumn{1}{l|}{121.6}            & \multicolumn{1}{l|}{Ground}                 \\ \hline
 \multicolumn{1}{|l|}{\multirow{1}{*}{{TWR}}} & \multicolumn{1}{l|}{\textbf{\textunderscore{}TWR}} & \multicolumn{1}{l|}{\textbf{118.3}}   & \multicolumn{1}{l|}{\textbf{Tower}}         \\ \hline
 \multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{APP}}} & \multicolumn{1}{l|}{\textbf{\textunderscore{}APP}} & \multicolumn{1}{l|}{\textbf{128.55}} & \multicolumn{1}{l|}{\textbf{Pickup}} \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}F\textunderscore{}APP}          & \multicolumn{1}{l|}{128.50}            & \multicolumn{1}{l|}{DUS Director}         \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}N\textunderscore{}APP}          & \multicolumn{1}{l|}{128.65}            & \multicolumn{1}{l|}{North Approach}         \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}F\textunderscore{}APP}          & \multicolumn{1}{l|}{128.65}            & \multicolumn{1}{l|}{DUS Director}         \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}N\textunderscore{}APP}          & \multicolumn{1}{l|}{128.50}            & \multicolumn{1}{l|}{North Approach}         \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}S\textunderscore{}APP}          & \multicolumn{1}{l|}{121.35}            & \multicolumn{1}{l|}{South Approach}         \\ \hline
-\multicolumn{1}{|l|}{\multirow{9}{*}{\rotatebox{90}{CTR}}} & \multicolumn{1}{l|}{\textunderscore{}CTR}          & \multicolumn{1}{l|}{135.72}          & \multicolumn{1}{l|}{Complete}              \\
+\multicolumn{1}{|l|}{\multirow{5}{*}{\rotatebox{90}{CTR}}} & \multicolumn{1}{l|}{\textunderscore{}CTR}          & \multicolumn{1}{l|}{135.72}          & \multicolumn{1}{l|}{Complete}              \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textbf{\textunderscore{}P\textunderscore{}CTR}} & \multicolumn{1}{l|}{\textbf{135.65}} & \multicolumn{1}{l|}{\textbf{Paderborn High}}  \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}T\textunderscore{}CTR}          & \multicolumn{1}{l|}{127.625}            & \multicolumn{1}{l|}{Taunus}             \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}M\textunderscore{}CTR}          & \multicolumn{1}{l|}{133.85}          & \multicolumn{1}{l|}{Münster}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}R\textunderscore{}CTR}          & \multicolumn{1}{l|}{132.62}          & \multicolumn{1}{l|}{Ruhr}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}C\textunderscore{}CTR}          & \multicolumn{1}{l|}{133.95}          & \multicolumn{1}{l|}{Celle}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}S\textunderscore{}CTR}          & \multicolumn{1}{l|}{131.37}          & \multicolumn{1}{l|}{Solling}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}W\textunderscore{}CTR}          & \multicolumn{1}{l|}{129.87}          & \multicolumn{1}{l|}{Langen Info Nord/West}          \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}U\textunderscore{}CTR}          & \multicolumn{1}{l|}{123.52}          & \multicolumn{1}{l|}{Langen Info West}          \\ \hline
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textit{\textunderscore{}W\textunderscore{}CTR}}          & \multicolumn{1}{l|}{\textit{129.87}}          & \multicolumn{1}{l|}{\textit{Langen Info Nord/West}}          \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textit{\textunderscore{}U\textunderscore{}CTR}}          & \multicolumn{1}{l|}{\textit{123.52}}          & \multicolumn{1}{l|}{\textit{Langen Info West}}          \\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}
 
 \begin{textblock}{100}(0, 125)
 \begin{table}[]
-\begin{tabular}{lllllll} 
+\begin{tabular}{lllll} 
 \multicolumn{7}{c}{\textbf{Holdings}}                                                                                                                                        \\ \hline
 \multicolumn{1}{|l|}{BAM} & 
 \multicolumn{1}{l|}{BOT}   & 
 \multicolumn{1}{l|}{LMA} & 
 \multicolumn{1}{l|}{LEBTI} & 
-\multicolumn{1}{l|}{RONAD} & 
-\multicolumn{1}{l|}{LAA} &
-\multicolumn{1}{l|}{MHV} \\ \hline
+\multicolumn{1}{l|}{RONAD} \\ \hline
 \multicolumn{1}{|l|}{3000 AMSL} & 
 \multicolumn{1}{l|}{4000 AMSL} & 
 \multicolumn{1}{l|}{4000 AMSL} & 
 \multicolumn{1}{l|}{3000 AMSL} & 
-\multicolumn{1}{l|}{4000 AMSL} & 
-\multicolumn{1}{l|}{3000 AMSL} & 
-\multicolumn{1}{l|}{2000 AMSL} \\
+\multicolumn{1}{l|}{4000 AMSL} \\
 \multicolumn{1}{|l|}{251$^\circ$ R} & 
 \multicolumn{1}{l|}{058$^\circ$ L} & 
 \multicolumn{1}{l|}{240$^\circ$ R} & 
 \multicolumn{1}{l|}{234$^\circ$ R} & 
-\multicolumn{1}{l|}{263$^\circ$ R} & 
-\multicolumn{1}{l|}{271$^\circ$ R} & 
-\multicolumn{1}{l|}{180$^\circ$ L} \\ \hline
+\multicolumn{1}{l|}{263$^\circ$ R} \\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}

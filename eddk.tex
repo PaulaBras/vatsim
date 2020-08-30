@@ -160,11 +160,13 @@
 \begin{textblock}{100}(95, 90)
 \begin{table}[]
 \begin{tabular}{llll}
-\multicolumn{4}{c}{\textbf{Precision Approach}} \\ \hline
+\multicolumn{4}{c}{\textbf{Precision Approach (ILS)}} \\ \hline
 \multicolumn{1}{|l|}{RWY} & \multicolumn{1}{c|}{\textbf{14L}} & \multicolumn{1}{c|}{\textbf{32R}} & \multicolumn{1}{c|}{\textbf{24}} \\ \hline
-\multicolumn{1}{|l|}{FREQ} & \multicolumn{1}{l|}{110.90} & \multicolumn{1}{l|}{111.10 / 109.70} & \multicolumn{1}{l|}{109.10} \\
+\multicolumn{1}{|l|}{FREQ} & \multicolumn{1}{l|}{110.90} & \multicolumn{1}{l|}{111.10} & \multicolumn{1}{l|}{109.10} \\
 \multicolumn{1}{|l|}{CRS} & \multicolumn{1}{l|}{136$^\circ$} & \multicolumn{1}{l|}{316$^\circ$} & \multicolumn{1}{l|}{243$^\circ$} \\
-\multicolumn{1}{|l|}{FAF} & \multicolumn{1}{l|}{LEGDU} & \multicolumn{1}{l|}{RARIX} & \multicolumn{1}{l|}{KUKIT} \\ \hline
+\multicolumn{1}{|l|}{FAF} & \multicolumn{1}{l|}{LEGDU} & \multicolumn{1}{l|}{RARIX} & \multicolumn{1}{l|}{KUKIT} \\
+\multicolumn{1}{|l|}{CAT} & \multicolumn{1}{l|}{CAT III B} & \multicolumn{1}{l|}{CAT III B} & \multicolumn{1}{l|}{CAT I} \\
+\multicolumn{1}{|l|}{RVR} & \multicolumn{1}{l|}{\textgreater{}=75m} & \multicolumn{1}{l|}{\textgreater{}=75m} & \multicolumn{1}{l|}{\textgreater{}=600m} \\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}
@@ -173,14 +175,14 @@
 \begin{table}[]
 \begin{tabular}{llll}
 \multicolumn{4}{c}{\textbf{Communication}}                                                                                                                          \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{GND}}} & \multicolumn{1}{l|}{\textunderscore{}ATIS}          & \multicolumn{1}{l|}{124.1}          & \multicolumn{1}{l|}{ATIS}                   \\
+\multicolumn{1}{|l|}{\multirow{4}{*}{\rotatebox{90}{GND}}} & \multicolumn{1}{l|}{\textunderscore{}ATIS}          & \multicolumn{1}{l|}{124.10}          & \multicolumn{1}{l|}{ATIS}                   \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}DEL}          & \multicolumn{1}{l|}{121.85}            & \multicolumn{1}{l|}{Delivery}               \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}GND}          & \multicolumn{1}{l|}{121.725}            & \multicolumn{1}{l|}{Ground}                 \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}P\textunderscore{}GND}          & \multicolumn{1}{l|}{121.855}            & \multicolumn{1}{l|}{Apron}                 \\ \hline
 \multicolumn{1}{|l|}{\multirow{1}{*}{{TWR}}} & \multicolumn{1}{l|}{\textbf{\textunderscore{}TWR}} & \multicolumn{1}{l|}{\textbf{124.975}}   & \multicolumn{1}{l|}{\textbf{Tower}}         \\ \hline
 \multicolumn{1}{|l|}{\multirow{2}{*}{\rotatebox{90}{APP}}} & \multicolumn{1}{l|}{\textbf{\textunderscore{}APP}} & \multicolumn{1}{l|}{\textbf{135.35}} & \multicolumn{1}{l|}{\textbf{Pickup}} \\
-\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}F\textunderscore{}APP}          & \multicolumn{1}{l|}{121.05}            & \multicolumn{1}{l|}{Director}         \\ \hline
-\multicolumn{1}{|l|}{\multirow{6}{*}{\rotatebox{90}{CTR}}} & \multicolumn{1}{l|}{\textunderscore{}CTR}          & \multicolumn{1}{l|}{135.72}          & \multicolumn{1}{l|}{Complete}              \\
+\multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}F\textunderscore{}APP}          & \multicolumn{1}{l|}{121.05}            & \multicolumn{1}{l|}{Feeder}         \\ \hline
+\multicolumn{1}{|l|}{\multirow{6}{*}{\rotatebox{90}{CTR}}} & \multicolumn{1}{l|}{\textunderscore{}CTR}          & \multicolumn{1}{l|}{135.72}          & \multicolumn{1}{l|}{Groß Langen}              \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textbf{\textunderscore{}P\textunderscore{}CTR}} & \multicolumn{1}{l|}{\textbf{135.65}} & \multicolumn{1}{l|}{\textbf{Paderborn High}}  \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}T\textunderscore{}CTR}          & \multicolumn{1}{l|}{127.625}            & \multicolumn{1}{l|}{Taunus}             \\
 \multicolumn{1}{|l|}{}                     & \multicolumn{1}{l|}{\textunderscore{}M\textunderscore{}CTR}          & \multicolumn{1}{l|}{133.85}          & \multicolumn{1}{l|}{Münster}          \\
@@ -192,23 +194,43 @@
 
 \begin{textblock}{100}(0, 125)
 \begin{table}[]
-\begin{tabular}{lllll} 
-\multicolumn{5}{c}{\textbf{Holdings}}                                                                                                                                        \\ \hline
-\multicolumn{1}{|l|}{NOV} & 
-\multicolumn{1}{l|}{GMH}   & 
-\multicolumn{1}{l|}{GULKO} & 
+\begin{tabular}{lllllll} 
+\multicolumn{7}{c}{\textbf{Holdings}}                                                                                                                                          \\ \hline
+\multicolumn{1}{|l|}{KOPAG} &                                                                                                                                            
+\multicolumn{1}{l|}{GULKO} &                                                                                                                                              
+\multicolumn{1}{l|}{ERUKI} &                                                                                                                                              
+\multicolumn{1}{l|}{ELDAR} &                                                                                                                                       
+\multicolumn{1}{l|}{NVO} & 
 \multicolumn{1}{l|}{WIPPER} & 
 \multicolumn{1}{l|}{COL} \\ \hline
-\multicolumn{1}{|l|}{6000} & 
+\multicolumn{1}{|l|}{CTR} & 
+\multicolumn{1}{l|}{CTR} & 
+\multicolumn{1}{l|}{CTR} & 
+\multicolumn{1}{l|}{APP} & 
+\multicolumn{1}{l|}{APP} & 
+\multicolumn{1}{l|}{APP} & 
+\multicolumn{1}{l|}{APP} \\
+\multicolumn{1}{|l|}{5000} & 
 \multicolumn{1}{l|}{5000} & 
-\multicolumn{1}{l|}{5000} & 
+\multicolumn{1}{l|}{FL70} & 
+\multicolumn{1}{l|}{6000} & 
+\multicolumn{1}{l|}{6000, 230kt IAS} & 
 \multicolumn{1}{l|}{max 5000, 170kt IAS} & 
 \multicolumn{1}{l|}{5000} \\
-\multicolumn{1}{|l|}{068$^\circ$ R} & 
-\multicolumn{1}{l|}{205$^\circ$ L} & 
+\multicolumn{1}{|l|}{205$^\circ$ L} & 
 \multicolumn{1}{l|}{276$^\circ$ L} & 
+\multicolumn{1}{l|}{096$^\circ$ R} & 
+\multicolumn{1}{l|}{356$^\circ$ L} & 
+\multicolumn{1}{l|}{068$^\circ$ R} & 
 \multicolumn{1}{l|}{081$^\circ$ L} & 
-\multicolumn{1}{l|}{298$^\circ$ L} \\ \hline
+\multicolumn{1}{l|}{298$^\circ$ L} \\
+\multicolumn{1}{|l|}{1 min} & 
+\multicolumn{1}{l|}{1 min} & 
+\multicolumn{1}{l|}{1.3 min} & 
+\multicolumn{1}{l|}{1 or 1.5 min} & 
+\multicolumn{1}{l|}{1 min} & 
+\multicolumn{1}{l|}{1 min} & 
+\multicolumn{1}{l|}{1 min} \\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}
@@ -219,11 +241,11 @@
 \begin{tabular}{llllll}
 \multicolumn{6}{c}{\textbf{Handoff Levels}} \\ \hline
 \multicolumn{2}{|l|}{14 Betrieb} & \multicolumn{2}{l|}{24 Betrieb} & \multicolumn{2}{l|}{32 Betrieb}\\ \hline
-\multicolumn{1}{|l}{DEPOK} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{l}{DEPOK} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{|l}{DEPOK} & \multicolumn{1}{l|}{FL100} & 
-\multicolumn{1}{|l}{ERNEP} & \multicolumn{1}{l|}{FL140} & \multicolumn{1}{l}{ERNEP} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{|l}{ERNEP} & \multicolumn{1}{l|}{FL120} &
-\multicolumn{1}{|l}{GULKO} & \multicolumn{1}{l|}{FL120} & \multicolumn{1}{l}{GULKO} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{|l}{GULKO} & \multicolumn{1}{l|}{FL080} &
-\multicolumn{1}{|l}{KOPAG} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{l}{KOPAG} & \multicolumn{1}{l|}{FL080} & \multicolumn{1}{|l}{KOPAG} & \multicolumn{1}{l|}{FL100} &
-\multicolumn{1}{|l}{NVO} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{l}{NVO} & \multicolumn{1}{l|}{FL120} & \multicolumn{1}{|l}{NVO} & \multicolumn{1}{l|}{FL120} \\ \hline
+\multicolumn{1}{|l}{DEPOK} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{l}{DEPOK} & \multicolumn{1}{l}{FL100} & \multicolumn{1}{|l}{DEPOK} & \multicolumn{1}{l|}{FL100} & 
+\multicolumn{1}{|l}{ERNEP} & \multicolumn{1}{l|}{FL140} & \multicolumn{1}{l}{ERNEP} & \multicolumn{1}{l}{FL100} & \multicolumn{1}{|l}{ERNEP} & \multicolumn{1}{l|}{FL120} &
+\multicolumn{1}{|l}{GULKO} & \multicolumn{1}{l|}{FL120} & \multicolumn{1}{l}{GULKO} & \multicolumn{1}{l}{FL100} & \multicolumn{1}{|l}{GULKO} & \multicolumn{1}{l|}{FL080} &
+\multicolumn{1}{|l}{KOPAG} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{l}{KOPAG} & \multicolumn{1}{l}{FL080} & \multicolumn{1}{|l}{KOPAG} & \multicolumn{1}{l|}{FL100} &
+\multicolumn{1}{|l}{NVO} & \multicolumn{1}{l|}{FL100} & \multicolumn{1}{l}{NVO} & \multicolumn{1}{l}{FL120} & \multicolumn{1}{|l}{NVO} & \multicolumn{1}{l|}{FL120} \\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}

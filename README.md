@@ -1,3 +1,3 @@
 # Vatsim Germany
 Quicksheets for virtual controlling
-EDDL, EDDK, EDDT
+EDDF, EDDL, EDDK and now closed EDDT

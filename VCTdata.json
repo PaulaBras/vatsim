@@ -1,49 +1,30 @@
 {
-  "EDDB": {
-    "VCT": {
-
-    },
-    "BELID": {
-      "restrictions": [
-        {
-         
-        }
-      ]
-    },
-    "BKD": {
-      "restrictions": [
-        {
-          
-        }
-      ]
-    },
-    "GERGA": {
+  "_BEISPIEL": {
+    "SID": {
+      "general": {
+        "initclimb": 40000
+      },
       "restrictions": [
         {
           "airways": [
-            "RENKI L132",
-            "Y218"
-          ]
-        }
-      ]
-    },
-    "TUVAD": {
-      "restrictions": [
-        {
+            "NAMOB",
+            "RAMIR N291"
+          ],
           "destinations": [
-            "EDDM"
-          ]
+            "EDNY",
+            "LS",
+            "KJF"
+          ],
+          "wtc": "LM",
+          "etype": "PJ",
+          "ecount": 6
         }
-      ]
-    },
-    "KLF": {
-      "restrictions": [
+      ],
+      "8P": [
         {
-          "destinations": [
-            "EDDT",
-            "EDDB",
-            "EDDI"
-          ]
+          "initclimb": 5000,
+          "wtc": "H",
+          "etype": "TE"
         }
       ]
     }
@@ -63,7 +44,19 @@
       ],
       "9F": [
         {
-          "initclimb":  5000
+          "initclimb": 5000
+        }
+      ],
+      "4E": [
+        {
+          "initclimb": 4000,
+          "wtc": "LM"
+        }
+      ],
+      "2D": [
+        {
+          "initclimb": 4000,
+          "wtc": "HJ"
         }
       ]
     },
@@ -88,7 +81,12 @@
       },
       "restrictions": [
         {
-
+          "destinations": [
+            "EDDN",
+			"ETHN",
+			"ETEP",
+			"ETIC"
+          ]
         }
       ]
     },
@@ -103,22 +101,26 @@
       ],
       "6M": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "4H": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "2W": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "2K": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "7S": [
@@ -138,7 +140,9 @@
       ],
       "6F": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "wtc": "H",
+          "ecount": 2
         }
       ],
       "8N": [
@@ -148,12 +152,14 @@
       ],
       "5E": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "wtc": "LM"
         }
       ],
-      "6D": [
+      "9D": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "wtc": "HJ"
         }
       ],
       "4T": [
@@ -173,22 +179,26 @@
       ],
       "6M": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "4H": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "2W": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "2K": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "2S": [
@@ -203,7 +213,9 @@
       ],
       "2G": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "wtc": "H",
+          "ecount": 2
         }
       ],
       "1R": [
@@ -218,12 +230,14 @@
       ],
       "1E": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "wtc": "LM"
         }
       ],
       "1D": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "wtc": "HJ"
         }
       ],
       "1T": [
@@ -240,7 +254,8 @@
       ],
       "5P": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "etype": "PT"
         }
       ],
       "6F": [
@@ -255,12 +270,14 @@
       ],
       "6E": [
         {
-          "initclimb": 4000
+          "initclimb": 4000,
+          "wtc": "LM"
         }
       ],
       "6D": [
         {
-          "initclimb": 4000
+          "initclimb": 4000,
+          "wtc": "HJ"
         }
       ],
       "1U": [
@@ -310,22 +327,26 @@
       ],
       "6M": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "4H": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "2W": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "2K": [
         {
-          "initclimb": 7000
+          "initclimb": 7000,
+          "wtc": "LMHJ"
         }
       ],
       "9S": [
@@ -350,7 +371,9 @@
       ],
       "1G": [
         {
-          "initclimb": 5000
+          "initclimb": 5000,
+          "wtc": "H",
+          "ecount": 2
         }
       ],
       "1D": [
@@ -374,7 +397,7 @@
         }
       ]
     },
-	"MTR": {
+    "MTR": {
       "general": {
         "initclimb": 5000
       },
@@ -384,7 +407,7 @@
         }
       ]
     },
-	"TAI": {
+    "TAI": {
       "general": {
         "initclimb": 5000
       },
@@ -504,27 +527,21 @@
       ]
     }
   },
-  "EDDK": {
-    "general": {
-      "initclimb": 5000
-    }
-  },
   "EDDL": {
-    "general": {
-      "initclimb": 5000
-    },
     "VCT": {
 
     },
     "COL": {
       "restrictions": [
         {
+          "direction": "ODD"
         }
       ]
     },
     "DODEN": {
       "restrictions": [
         {
+          "direction": "ODD",
           "min_fl": 250
         }
       ]
@@ -532,6 +549,7 @@
     "GMH": {
       "restrictions": [
         {
+          "direction": "ODD",
           "max_fl": 140
         }
       ]
@@ -539,6 +557,7 @@
     "KUMIK": {
       "restrictions": [
         {
+          "direction": "ODD",
           "min_fl": 150
         }
       ]
@@ -546,18 +565,21 @@
     "LMA": {
       "restrictions": [
         {
+          "direction": "EVEN"
         }
       ]
     },
     "MEVEL": {
       "restrictions": [
         {
+          "direction": "ODD"
         }
       ]
     },
     "MODRU": {
       "restrictions": [
         {
+          "direction": "EVEN",
           "min_fl": 210
         }
       ]
@@ -565,6 +587,7 @@
     "NETEX": {
       "restrictions": [
         {
+          "direction": "EVEN",
           "min_fl": 100,
           "max_fl": 200
         }
@@ -573,6 +596,7 @@
     "NUDGO": {
       "restrictions": [
         {
+          "direction": "ODD",
           "max_fl": 245
         }
       ]
@@ -656,7 +680,7 @@
 
     },
     "ABTAL": {
-      
+
     },
     "DKB": {
       "restrictions": [
@@ -669,7 +693,7 @@
           "destinations": [
             "EDDN",
             "EDTY",
-            "EDQX"
+            "EDQ"
           ]
         }
       ]
@@ -710,7 +734,7 @@
       ]
     },
     "KUNOD": {
-      
+
     },
     "OKIBA": {
       "restrictions": [
@@ -771,7 +795,7 @@
       ]
     },
     "VESID": {
-      
+
     }
   },
   "EDDT": {
@@ -1055,8 +1079,362 @@
     }
   },
   "EDSB": {
-	"general": {
-		"initclimb": 7000
+    "general": {
+      "initclimb": 7000
+    }
+  },
+  "EDDB": {
+    "VCT": {
+
+    },
+    "GERGA": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1M": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000
+        }
+      ]
+    },
+    "ARSAP": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1M": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000
+        }
+      ]
+    },
+    "LUROS": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1M": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000
+        }
+      ]
+    },
+    "SOGMA": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1K": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1J": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1P": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1Y": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1Q": [
+        {
+		  "initclimb": 8000
+        }
+      ],
+      "1R": [
+        {
+		  "initclimb": 8000,
+          "etype": "P"
+        }
+      ]
+    },
+	"HLZ": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1K": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1J": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1P": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1Y": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1Q": [
+        {
+		  "initclimb": 8000
+        }
+      ],
+      "1R": [
+        {
+		  "initclimb": 8000,
+          "etype": "P"
+        }
+      ]
+    },
+	"POVEL": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1K": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1J": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1P": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1Y": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1Q": [
+        {
+		  "initclimb": 8000
+        }
+      ],
+      "1R": [
+        {
+		  "initclimb": 8000,
+          "etype": "P"
+        }
+      ]
+    },
+	"MAXAN": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1K": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1J": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1Y": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1Q": [
+        {
+		  "initclimb": 8000
+        }
+      ],
+      "1R": [
+        {
+		  "initclimb": 8000,
+          "etype": "P"
+        }
+      ]
+    },
+	"ODLUN": {
+      "general": {
+        "initclimb": 5000
+        "etype": "J"
+      },
+      "1C": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1D": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1K": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1J": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1P": [
+        {
+          "etype": "P"
+        }
+      ],
+      "1Y": [
+        {
+		  "initclimb": 4000
+        }
+      ],
+      "1Z": [
+        {
+		  "initclimb": 4000,
+          "etype": "P"
+        }
+      ],
+      "1Q": [
+        {
+		  "initclimb": 8000
+        }
+      ],
+      "1R": [
+        {
+		  "initclimb": 8000,
+          "etype": "P"
+        }
+      ]
+    },
+	"ODLUN": {
+      "general": {
+        "initclimb": 4000
+        "etype": "P"
+      }
 	}
   }
 }

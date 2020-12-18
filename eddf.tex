@@ -33,13 +33,22 @@
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{7mm}{12mm}
 
+\begin{textblock}{100}(100, 0)
+  \large
+  \centering
+  EDDF Quicksheet Rework BETA!
+
+ \DTMlangsetup{showdayofmonth=false}
+  \today
+\end{textblock}
+
 
 \begin{textblock}{30}(0,0)
 
 \begin{table}[]
 \begin{tabular}{|c|l|c|c|c|l}
 \multicolumn{5}{c}{\textbf{Standard North Departure}}  \\ \cline{1-5}
-SID                 & \multicolumn{1}{c|}{WTC}                                   & \multicolumn{1}{c|}{OBOKA} & \multicolumn{1}{c|}{MARUN} & \multicolumn{1}{c|}{TOBAK} & \multirow{2}{*}{} \\
+SID                 & \multicolumn{1}{c|}{Restrictions}                                   & \multicolumn{1}{c|}{OBOKA} & \multicolumn{1}{c|}{MARUN} & \multicolumn{1}{c|}{TOBAK} & \multirow{2}{*}{} \\
 
 
 RFL                 &                                    & \multicolumn{1}{r|}{even}  & \multicolumn{1}{r|}{even}  & \multicolumn{1}{r|}{odd}   &                                                  \\ \cline{1-5}
@@ -73,7 +82,7 @@ RFL                 &                                    & \multicolumn{1}{r|}{e
 \begin{table}[]
 \begin{tabular}{|c|l|c|c|c|c|c|c|l}
 \multicolumn{8}{c}{\textbf{Standard South Departure}}                                                                                                                                                                                                                  &                                  \\ \cline{1-8}
-SID                          & \multicolumn{1}{c|}{WTC}                 & SOBRA                                       & ULKIG                                       & ANEKI                    & CINDY                    & KOMIB                              & SULUS                    &                                  \\
+SID                          & \multicolumn{1}{c|}{Restrictions}                 & SOBRA                                       & ULKIG                                       & ANEKI                    & CINDY                    & KOMIB                              & SULUS                    &                                  \\
 RFL                          &                  & \multicolumn{1}{r|}{even} & \multicolumn{1}{r|}{even} & \multicolumn{1}{r|}{odd} & \multicolumn{1}{r|}{odd} & \multicolumn{1}{r|}{odd \scriptsize EDDN area} & \multicolumn{1}{r|}{odd} & \multirow{4}{*}{\rotatebox{90}{\textbf{5000 ft}}} \\ \cline{1-8}
 \multirow{3}{*}{\textbf{25}} & Prop 1/2         & 5P                                          &                                             &                          &                          &                                    &                          &                                  \\ \cline{2-8}
                              &                  & 6F                                          &                                             & 9F                       & 1F                       &                                    & 1F                       &                                  \\ \cline{2-8}
@@ -141,7 +150,7 @@ FAF  & LEDKI                             & REDGO                             & E
 
 
 
-\begin{textblock}{100}(100,145)
+\begin{textblock}{100}(0,155)
 \begin{table}[]
 \begin{tabular}{|l|l|l|}
 \multicolumn{3}{c}{\textbf{Non-RNAV}} \\ \hline
@@ -151,27 +160,20 @@ FAF  & LEDKI                             & REDGO                             & E
 \end{table}
 \end{textblock}
 
-\begin{textblock}{100}(100, 0)
-  \large
-  \centering
-  EDDF Quicksheet Rework BETA!
 
- \DTMlangsetup{showdayofmonth=false}
-  \today
-\end{textblock}
 
-\begin{textblock}{100}(0, 145)
+\begin{textblock}{100}(0, 135)
 \begin{table}[]
-\begin{tabular}{|l|l|l|l|l|}
+\begin{tabular}{|l|l|l|l||l|l|}
 \multicolumn{5}{c}{\textbf{Handoff levels}}              \\ \hline
-           & UNOKO     & ROLIS     & SPESA     & KERAX     \\ \hline
-\textbf{N} & RAMOB 110 & ETARU 100 & RIPKU 130 & KERAX 110 \\
-\textbf{S} & RAMOB 130 & OSPUL 120 & SPESA 110 & EBIPA 120 \\ \hline
+           & UNOKO     & ROLIS     & SPESA     & \multicolumn{2}{c|}{KERAX}     \\ \hline
+\textbf{N} (A/D) & RAMOB 110 & ETARU 100 & RIPKU 130 & KERAX A 110 & KERAX C 120\\
+\textbf{S} (B/C) & RAMOB 130 & OSPUL 120 & SPESA 110 & KERAX B 110 & KERAX D 130\\ \hline
 \end{tabular}
 \end{table}
 \end{textblock}
 
-\begin{textblock}{100}(0,115)
+\begin{textblock}{100}(0,110)
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|}
 
@@ -184,7 +186,7 @@ FL110  & FL110  & 6000   & 6000   & 5000   & 5000   & 5000   & 5000   & 5000   \
 \end{table}
 \end{textblock}
 
-\begin{textblock}{100}(139,115)
+\begin{textblock}{100}(139,110)
 \begin{table}[]
 \begin{tabular}{|c|l|}
 \multicolumn{2}{c}{\textbf{Target spacing}} \\ \hline

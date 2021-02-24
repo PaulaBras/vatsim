@@ -1,4 +1,6 @@
 # Vatsim Germany
 Quicksheets for virtual controlling
 
-EDDF (beta), EDDL, EDDK and now closed EDDT
+EDDF, EDDL, EDDK, EDDB (Beta)
+
+Closed: EDDT (Aerodome inactive, D-CTR dissolved)

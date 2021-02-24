@@ -1,0 +1,212 @@
+\documentclass[10pt,landscape,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Segoe UI}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[landscape,top=0cm,bottom=1cm,right=1cm,left=0cm,noheadfoot,bindingoffset=0pt,marginparwidth=0pt,marginparsep=0pt]{geometry}
+\pagestyle{empty}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{nicematrix}
+\usepackage[en-US]{datetime2}
+
+
+\newlength{\Oldarrayrulewidth}
+\newcommand{\Cline}[2]{%
+  \noalign{\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
+  \noalign{\global\setlength{\arrayrulewidth}{#1}}\cline{#2}%
+  \noalign{\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
+
+\title{EDDB}
+\author{ }
+\date{\today}
+
+\begin{document}
+
+\setlength\extrarowheight{1pt}
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{7mm}{12mm}
+
+\begin{textblock}{2}(210, -5)
+  \includegraphics[width=30\textwidth]{VATGer-Logo-Colour}
+\end{textblock}
+
+\begin{textblock}{100}(100, -5)
+  \large
+  \centering
+  \textbf{EDDB Quicksheet}
+
+ \DTMlangsetup{showdayofmonth=false}
+  \today
+\end{textblock}
+
+
+\begin{textblock}{30}(-5,-5)
+\begin{table}
+%\begin{NiceTabular}{wl{2.2cm}CCC}[hvlines,code-before = \cellcolor{lightgray}{2-4,3-3,4-2,4-4}]
+\begin{tabular}{|l|l|c|c|c|c|c|}
+\multicolumn{7}{c}{\textbf{Standard North Departure}}  \\ \hline
+RWY 			& Acft Type				& Inital CLB & \textbf{HLZ} & \textbf{SOGMA} & \textbf{POVEL} & \textbf{GERGA} \\
+RFL 			& 						& 			& & & & \\		\hline	
+
+\textbf{25R} & Jet & 5000 ft & \textbf{1A} & \textbf{1A} & \textbf{1A} & \textbf{1A} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid}  \\ \cline{2-7}
+& Jet (if unable) & 4000 ft & & & & 1M \\ \cline{2-7}
+& Prop & \multirow{6}{*}{5000 ft} & \textbf{\textit{1C}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1C}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1C}}  \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1C}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} \\ \cline{1-2} \cline{4-7}
+
+\textbf{25L} & & & & & & \textbf{1N} \\ \cline{2-2} \cline{4-7}
+& Jet & & \textbf{1N} & \textbf{1N} & \textbf{1N} & \\ \cline{2-2} \cline{4-7}
+& Prop & & \textbf{\textit{1P}} & \textbf{\textit{1P}} & \textbf{\textit{1P}} & \\ \cline{1-2} \cline{4-7}
+
+\textbf{07L} & Jet &  & \textbf{1B} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1B} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1B} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1B} \\ \cline{2-2} \cline{4-7}
+& Prop & & \textbf{\textit{1D}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1D}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1D}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1D}} \\ \cline{2-7}
+& Jet (if unable) & \multirow{2}{*}{4000 ft} & 1K & 1K & 1K & \\ \cline{2-2} \cline{4-7}
+& Prop (if unable) & & \textit{1J} & \textit{1J} & \textit{1J} &  \\ \hline
+
+\textbf{07R} & Noise & 5000 ft & & & & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} \\ \cline{2-7}
+& by ATC only & 4000 ft & & & & 1Z \\ \cline{2-7}
+& Jet & \multirow{2}{*}{FL80} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \\ \cline{2-2} \cline{4-7}
+& Prop & & \textbf{1R} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \\ \cline{2-7}
+& Jet (if unable) & \multirow{2}{*}{4000 ft} & 1Z & 1Z & 1Z & \\ \cline{2-2} \cline{4-7}
+& Prop (if unable) & & \textit{1Y} & \textit{1Y} & \textit{1Y} &  \\ \hline
+
+\multicolumn{7}{l}{\includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} \color{red}Climb via SID} \\
+\end{tabular}
+%\end{NiceTabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{30}(125,5)
+\begin{table}[]
+\begin{tabular}{|l|l|c|c|c|c|c|}
+\multicolumn{7}{c}{\textbf{Standard South Departure}}  \\ \hline
+RWY 			& Acft Type				& Inital CLB & \textbf{MAXAN} & \textbf{ODLUN} & \textbf{LUROS} & \textbf{ARSAP} \\ 
+RFL 			& 						& 		& & & & \\			\hline
+
+\textbf{25R} & Jet & 5000 ft & \textbf{1A} & \textbf{1A} & \textbf{1A} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1A} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} \\ \cline{2-7}
+& Jet (if unable) & 4000 ft & & & 1M & 1M \\ \cline{2-7}
+& Prop & \multirow{6}{*}{5000 ft} & \textbf{\textit{1C}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1C}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1C}}  \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1C}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} \\ \cline{1-2} \cline{4-7}
+
+\textbf{25L} & & & & & \textbf{1N} & \textbf{1N} \\ \cline{2-2} \cline{4-7}
+& Jet & & \textbf{1N} & \textbf{1N} & & \\ \cline{2-2} \cline{4-7}
+& Prop & & & \textbf{\textit{1P}} & & \\ \cline{1-2} \cline{4-7}
+
+\textbf{07L} & Jet &  & \textbf{1B} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1B} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1B} & \textbf{1N} \\ \cline{2-2} \cline{4-7}& Prop & & \textbf{\textit{1D}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1D}} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{\textit{1D}} & \textbf{\textit{1D}} \\ \cline{2-7}
+& Jet (if unable) & \multirow{2}{*}{4000 ft} & 1K & 1K & & \\ \cline{2-2} \cline{4-7}
+& Prop (if unable) & & \textit{1J} & \textit{1J} & &  \\ \hline
+
+\textbf{07R} & Noise & 5000 ft & & & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} \\ \cline{2-7}
+& by ATC only & 4000 ft & & & 1Z & 1Z \\ \cline{2-7}
+& Jet & \multirow{2}{*}{FL80} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1Q} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & & \\ \cline{2-2} \cline{4-7}
+& Prop & & \textbf{1R} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & \textbf{1R} \includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} & & \\ \cline{2-7}
+& Jet (if unable) & \multirow{2}{*}{4000 ft} & 1Z & 1Z & & \\ \cline{2-2} \cline{4-7}
+& Prop (if unable) & & \textit{1Y} & \textit{1Y} & &  \\ \hline
+
+\multicolumn{7}{l}{\includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid} \color{red}Climb via SID} \\
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+\begin{textblock}{10}(-5,95)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+
+\multicolumn{5}{c}{\textbf{Communication}}                                      \\ \hline
+\multirow{2}{*}{}    & \textbf{ADB} & \textbf{\textunderscore{}ATIS} 									& \textbf{124.950} & \textbf{ATIS}            \\ 
+                     & \textbf{DBD}  & \textbf{\textunderscore{}DEL} 									& \textbf{121.600} & \textbf{Delivery}        \\ \hline
+\multirow{4}{*}{\rotatebox{90}{GND}} &  \textbf{DBGA} & \textbf{\textunderscore{}A\textunderscore{}GND} 	& \textbf{121.850} & \textbf{Main Apron}    \\ 
+                     & DBGE  & \textunderscore{}E\textunderscore{}GND         							& 129.600          & East Apron               \\ 
+                     & DBGN  & \textunderscore{}N\textunderscore{}GND       							& 121.800          & North Ground               \\
+                     & DBGS   & \textunderscore{}S\textunderscore{}GND        							& 121.700          & South Ground                   \\ \hline
+\multirow{2}{*}{\rotatebox{90}{TWR}} & \textbf{DBTN} & \textbf{\textunderscore{}N\textunderscore{}TWR} 	& \textbf{120.025} & \textbf{North Tower}           \\
+                     & DBTS   & \textunderscore{}S\textunderscore{}TWR        							& 118.775          & South Tower             \\ \hline
+\multirow{6}{*}{\rotatebox{90}{APP}} & \textbf{DBAT} & \textbf{\textunderscore{}F\textunderscore{}APP} 	& \textbf{136.100} & \textbf{North Director}   \\ 
+                     & DBAU   & \textunderscore{}U\textunderscore{}APP       							& 121.125          & South Director            \\ 
+                     & DBAN   & \textunderscore{}N\textunderscore{}APP        							& 119.625          & North Pickup           \\ 
+                     & \textbf{DBAS} & \textbf{\textunderscore{}S\textunderscore{}APP} 					& \textbf{118.500} & \textbf{South Pickup}  \\ 
+                     & DBAN   & \textunderscore{}N\textunderscore{}DEP        							& 134.425          & North Departure           \\ 
+                     & DBAS          & \textunderscore{}S\textunderscore{}DEP 							& 120.625          & South Departure          \\ \hline
+\multirow{5}{*}{\rotatebox{90}{CTR}} & WWW   & \textunderscore{}CTR        								& 125.025          & Complete            \\ %\cline{2-4}
+                     & \textbf{WB} & \textbf{\textunderscore{}B\textunderscore{}CTR} 					& \textbf{127.725} & \textbf{Börde}    \\ %\cline{2-4}
+                     & \textbf{WC}   & \textbf{\textunderscore{}C\textunderscore{}CTR}        			& \textbf{135.650} & \textbf{PADH Paderborn High}      \\ 
+                     & WA   & \textunderscore{}A\textunderscore{}CTR        							& 123.925          & Aller            \\ %\cline{2-4}
+                     & WH   & \textunderscore{}H\textunderscore{}CTR        							& 125.850          & Heide                \\ %\cline{2-4}
+                     & YC   & EDYY\textunderscore{}H\textunderscore{}CTR        						& 133.950          & Maastricht Hollstein                \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(205,120)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+\multicolumn{5}{c}{\textbf{Precision Approach}}                                                                                                                                                                            \\ \hline
+RWY  & \multicolumn{1}{c|}{\textbf{25L}} & \multicolumn{1}{c|}{\textbf{25R}} & \multicolumn{1}{c|}{\textbf{07L}} & \multicolumn{1}{c|}{\textbf{07R}}  \\ \hline
+APP  & ILS          & ILS           & ILS             & ILS            \\
+FREQ & 109.50       & 119.90        & 109.70          & 110.70          \\
+CRS  & 245$^\circ$  & 245$^\circ$   & 065$^\circ$     & 065$^\circ$ \\
+ALT  & 3000 ft      & 4000 ft       & 3000 ft         & 4000 ft \\
+FAF  & XANIM        & UBURU         & TEBGO           & ODIDO    \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+
+\begin{textblock}{100}(80,85)
+\begin{table}[]
+\begin{tabular}{|l|l|}
+\multicolumn{2}{c}{\textbf{Non-RNAV}} \\ \hline
+25L  & ROKMU1P (4000ft)\\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+\begin{textblock}{100}(102,160)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|}
+\multicolumn{13}{c}{\textbf{Intersection Departure}} \\ \hline
+ & \multicolumn{2}{c|}{\textbf{25L}} & \multicolumn{2}{c|}{\textbf{25R} North} & \multicolumn{2}{c|}{\textbf{25R} South}& \multicolumn{2}{c|}{\textbf{07R}} & \multicolumn{2}{c|}{\textbf{07L} North} & \multicolumn{2}{c|}{\textbf{07L} South} \\ \hline
+Heavy & M8 & 4000 m & K6\textsuperscript{**} & 3600 m & L8 & 3600 m & M2 & 4000 m & K1 & 3300 m & L1 & 3600 m \\ \hline
+Medium & M7 & 2715 m & K6\textsuperscript{**} & 3600 m & L7 & 3300 m & M3 & 2475 m & K1 & 3300 m & L2 & 3500 m \\ \hline
+Light, Prop & M6 & 2265 m & K5\textsuperscript{**} & 3385 m & L6 & 2515 m & M3 & 2475 m & K2 & 2150 m & L3 & 2470 m \\ \hline
+\multicolumn{13}{c}{** Most sceneries do not include K5 and K6. Use of K4 is recommended instead. TORA 3300 m} 
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+
+\begin{textblock}{100}(102,95)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\multicolumn{7}{c}{\textbf{Approach Holdings}}\\ \hline
+OGBER (TRANS)  			& OGBER (ILS)  		& KETAP (TRANS)  			& KETAP (ILS)    	& KLF  						& ATGUP    					& NURKO    					  \\ 
+5000 ft  				& 7100 ft  			& 5000 ft  					& 7100 ft    		& 4000 ft  					& 4000 ft    				& 4000 ft    				 \\ 
+119$^\circ$ L    		& 147$^\circ$ L    	& 147$^\circ$ L    			& 147$^\circ$ L    	& 020$^\circ$ R    			& 020$^\circ$ R    			& 331$^\circ$ R    			 \\
+DB413 \underline{FL80}  &   				& DB413 \underline{FL80}   	&    				& DB481 \underline{FL80}   	& DB482 \underline{FL80}   	& DB443 \underline{FL80}   \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(102,120)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|}
+\multicolumn{4}{c}{\textbf{Enroute Holdings}} \\ \hline
+MAG    			& RUDAK 			& NOTGO & LASTO    \\ 
+FL120 - FL270    	& FL100 - FL280 	& FL200 - FL300 & FL200 - FL300    \\ 
+038$^\circ$ L   	& 055$^\circ$ L 	& 060$^\circ$ R 	& 240$^\circ$ R    \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\end{document}

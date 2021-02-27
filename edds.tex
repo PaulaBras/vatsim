@@ -1,0 +1,138 @@
+\documentclass[10pt,landscape,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Segoe UI}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[landscape,top=0cm,bottom=1cm,right=1cm,left=0cm,noheadfoot,bindingoffset=0pt,marginparwidth=0pt,marginparsep=0pt]{geometry}
+\pagestyle{empty}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{babel}
+\usepackage[en-US]{datetime2}
+
+
+\newcommand{\x}{\includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid}}
+
+\newlength{\Oldarrayrulewidth}
+\newcommand{\Cline}[2]{%
+  \noalign{\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
+  \noalign{\global\setlength{\arrayrulewidth}{#1}}\cline{#2}%
+  \noalign{\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
+
+
+\title{EDDS}
+\author{Paul à Brassard}
+\date{\today}
+
+\begin{document}
+
+\setlength\extrarowheight{1pt}
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{7mm}{12mm}
+
+\begin{textblock}{2}(210, 0)
+  \includegraphics[width=30\textwidth]{VATGer-Logo-Colour}
+\end{textblock}
+
+
+\begin{textblock}{100}(100, 0)
+  \large
+  \centering
+  \textbf{EDDS Quicksheet}
+
+ \DTMlangsetup{showdayofmonth=false}
+  \today
+\end{textblock}
+
+
+\begin{textblock}{30}(0,15)
+\begin{table}
+\begin{tabular}{|l|c|c|c|c|c|c|c||c|c|c|c|c|c|l|}
+\multicolumn{1}{l}{} & \multicolumn{7}{c}{\textbf{Standard North Departure}} & \multicolumn{6}{c}{\textbf{Standard South Departure}}    \\ \hline
+SID / RWY 	& \textbf{KRH} & \textbf{VESID} & \textbf{TAGIK} & \textbf{ETASA} & \textbf{OKIBA} & \textbf{GEBNO} & \textbf{DKB} & \textbf{ABTAL} & \textbf{KUNOD} & \textbf{SUL} & \textbf{RTOWE} & \textbf{TEDGO} & \textbf{STG} & \multirow{11}{*}{\rotatebox{90}{\textbf{5000 ft}}} \\
+RFL 		& even & even & even & even & even & even & odd & odd & odd & odd & odd LS & odd & odd & \\	
+	 		& <FL85 & & <FL245 & & >FL195 & <FL185 & & & & & even LF & & &   \\		\cline{0-13}
+\textbf{25}	& \textbf{5B} \x & \textbf{4B} \x & \textbf{4B} \x & \textbf{4B} \x & \textbf{4B} \x & \textbf{7B} \x & \textbf{9B} \x & \textbf{4B} \x & \textbf{2B} \x & \textbf{3B} & \textbf{5B} & \textbf{1B} \x & \textbf{1B} \x & \\ \cline{0-13}
+\textbf{07}	& \textbf{2H} & \textbf{2H} & \textbf{2H} & \textbf{2H} & \textbf{4H} & \textbf{6H} & \textbf{4H} & \textbf{4H} & \textbf{2H} \x & \textbf{3H} \x & \textbf{7H} \x & \textbf{2H} \x & \textbf{2H} & \\		\cline{0-13}
+& \multicolumn{1}{m{1.3cm}|}{ EDDR EDRZ EDSB ETAR } & & \multicolumn{1}{m{1.3cm}|}{only via ABUMO ASKIK} & \multicolumn{1}{m{1.3cm}|}{EDDF EDFC EDFE ETOU} & & \multicolumn{1}{m{1.3cm}|}{only via Z76} & \multicolumn{1}{m{1.3cm}||}{only N869 EDDN EDTY EDQ*} & & & \multicolumn{1}{m{1.3cm}|}{Prop, Jet only EDNY EDTL LSZH LSZR} & \multicolumn{1}{m{1.3cm}|}{via NATOR not for prop, use SUL} & \multicolumn{1}{m{1.3cm}|}{local IFR ETHL} & \multicolumn{1}{m{1.3cm}|}{local IFR} & \\ \hline
+
+\multicolumn{2}{|l}{Handoff} & \multicolumn{6}{c||}{SN} & \multicolumn{4}{c|}{SS} & \multicolumn{2}{c|}{SF} \\ \cline{0-13}
+\multicolumn{8}{l}{Departure interval: 5NM same direction (West/East)} \\
+\multicolumn{8}{l}{\x \color{red}Climb via SID} \\
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+
+\begin{textblock}{10}(0,85)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+
+\multicolumn{5}{c}{\textbf{Communication}}                                      \\ \hline
+\multirow{3}{*}{}    & \textbf{XS} & \textbf{\textunderscore{}ATIS} 									& \textbf{126.125} & \textbf{ATIS}            \\ 
+                     & \textbf{SC}  & \textbf{\textunderscore{}DEL} 									& \textbf{121.900} & \textbf{Delivery}        \\ 
+					 &  \textbf{SG} & \textbf{\textunderscore{}GND} 									& \textbf{118.600} & \textbf{Ground}    \\ \hline
+\multirow{2}{*}{\rotatebox{90}{TWR}} & \textbf{ST} & \textbf{\textunderscore{}TWR} 						& \textbf{118.800} & \textbf{Tower}           \\
+                     & S2   & \textunderscore{}2\textunderscore{}TWR        							& 119.050          & VFR Tower             \\ \hline
+\multirow{3}{*}{\rotatebox{90}{APP}} & \textbf{SN} & \textbf{\textunderscore{}N\textunderscore{}APP} 	& \textbf{125.050} & \textbf{Pickup}   \\ 
+                     & SF   & \textunderscore{}F\textunderscore{}APP       								& 119.850          & Director            \\ 
+                     & SS   & \textunderscore{}S\textunderscore{}APP        							& 119.200          & Reutlingen           \\ \hline
+\multirow{8}{*}{\rotatebox{90}{CTR}} & GC   & \textunderscore{}CTR			      						& 135.725          & Complete                 \\ 
+                     & \textbf{GE} & \textbf{\textunderscore{}E\textunderscore{}CTR} 					& \textbf{127.725} & \textbf{HEF Hersfeld}    \\ 
+                     & GL   & \textunderscore{}L\textunderscore{}CTR        							& 127.050 			& LBU Luburg      \\ 
+                     & GR   & \textunderscore{}R\textunderscore{}CTR        							& 124.475          & RUD Rüdesheim            \\ 
+                     & GZ   & \textunderscore{}Z\textunderscore{}CTR        							& 120.575          & KTG Kitzingen            \\ 
+                     & UT   & \textunderscore{}T\textunderscore{}CTR        							& 132.400          & Rhein TGO                \\ 
+                     & UN   & \textunderscore{}N\textunderscore{}CTR        							& 132.775          & Rhein NTM                \\ 
+                     & \textbf{UW} & \textbf{\textunderscore{}W\textunderscore{}CTR} 					& \textbf{133.650} & \textbf{Rhein West}      \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+
+\begin{textblock}{100}(95, 80)
+\begin{table}[]
+\begin{tabular}{lllll}
+\multicolumn{3}{c}{\textbf{Precision Approach}} \\ \hline
+\multicolumn{1}{|l|}{RWY} & \multicolumn{1}{c|}{\textbf{07}} & \multicolumn{1}{c|}{\textbf{25}}\\ \hline
+\multicolumn{1}{|l|}{FREQ} & \multicolumn{1}{l|}{109.50} & \multicolumn{1}{l|}{109.90}\\
+\multicolumn{1}{|l|}{CRS} & \multicolumn{1}{l|}{072$^\circ$} & \multicolumn{1}{l|}{252$^\circ$}\\
+\multicolumn{1}{|l|}{FAP} & \multicolumn{1}{l|}{VATER} & \multicolumn{1}{l|}{UNSER} \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(145, 80)
+\begin{table}[]
+\begin{tabular}{|lr|lr|lr|lr|}
+\multicolumn{8}{c}{\textbf{Holdings}} \\ \hline
+BADSO && \multicolumn{2}{l|}{LBU / NOSBU} & TEKSI && REUTL & \\ \hline
+IKAM* & 130 & GEBNO & 120 & TEKSI & 110 & ARSUT & 120 \\
+BADLI & 110 &&&&&& \\ \hline
+\multicolumn{8}{l}{* Or abeam} \\
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(95, 110)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|l|}
+\multicolumn{6}{c}{\textbf{Holdings}} \\ \hline
+BADSO & LBU & TEKSI & REUTL & IBIRU & STG \\ \hline
+7000 & 5000ft & 6000 & 6000 & 5000 ft & 5000 ft \\
+174$^\circ$ L & 177$^\circ$ L & 268$^\circ$ R & 346$^\circ$ L & 346$^\circ$ L & 166$^\circ$ L \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+\end{document}

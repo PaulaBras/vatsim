@@ -1,0 +1,143 @@
+\documentclass[10pt,landscape,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Segoe UI}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[landscape,top=0cm,bottom=1cm,right=1cm,left=0cm,noheadfoot,bindingoffset=0pt,marginparwidth=0pt,marginparsep=0pt]{geometry}
+\pagestyle{empty}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{babel}
+\usepackage[en-US]{datetime2}
+
+
+\newcommand{\x}{\includegraphics[trim=0 8 0 0, width=0.13\textwidth]{ClimbViaSid}}
+
+\newlength{\Oldarrayrulewidth}
+\newcommand{\Cline}[2]{%
+  \noalign{\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
+  \noalign{\global\setlength{\arrayrulewidth}{#1}}\cline{#2}%
+  \noalign{\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
+
+
+\title{EDDC}
+\author{Paul à Brassard}
+\date{\today}
+
+\begin{document}
+
+\setlength\extrarowheight{1pt}
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{7mm}{12mm}
+
+\begin{textblock}{2}(210, 0)
+  \includegraphics[width=30\textwidth]{VATGer-Logo-Colour}
+\end{textblock}
+
+
+\begin{textblock}{100}(100, 0)
+  \large
+  \centering
+  \textbf{EDDC Quicksheet}
+
+ \DTMlangsetup{showdayofmonth=false}
+  \today
+\end{textblock}
+
+
+\begin{textblock}{30}(0, 20)
+\begin{table}
+\begin{tabular}{|l|c|c|c||c|c|c|c|c|c|l|}
+\multicolumn{1}{l}{} & \multicolumn{3}{c}{\textbf{Standard North Departure}} & \multicolumn{5}{c}{\textbf{Standard South Departure}}    \\ \hline
+SID / RWY 	& \textbf{BEBEX} & \textbf{OSKAN} & \textbf{KOBUS} & \textbf{HBO} & \textbf{DEKOV} & \textbf{LALUK} & \textbf{MAREM} & \textbf{ABKIS} & \multirow{6}{*}{\rotatebox{90}{\textbf{FL70}}} \\
+RFL 		& even & even & odd & odd & odd & even & even & even & \\	
+\textbf{04}	& \textbf{7E} \x & \textbf{9E} \x & \textbf{8E} \x & \textbf{8E} \x & \textbf{5E} \x & \textbf{5E} \x & \textbf{7E} \x & \textbf{3E} \x & \\ \cline{0-8}
+\textbf{22}	& \textbf{7W} & \textbf{3D} & \textbf{1W} & \textbf{1W} \x & \textbf{6W} \x & \textbf{4W} \x & \textbf{5W} \x & \textbf{3W} & \\ \hline
+
+\multicolumn{2}{|l}{Handoff} & \multicolumn{7}{c|}{CA} \\ \cline{0-8}
+\multicolumn{8}{l}{Departure interval: 5NM same direction (North/South)} \\
+\multicolumn{8}{l}{\x \color{red}Climb via SID} \\
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+
+\begin{textblock}{10}(170, 20)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|}
+
+\multicolumn{5}{c}{\textbf{Communication}}                                      \\ \hline
+\multirow{4}{*}{\rotatebox{90}{TWR}}    & CX & \textunderscore{}ATIS 									& 118.880 		   & ATIS            \\ 
+					 & CP & \textunderscore{}A\textunderscore{}GND 										& 121.755 		   & Apron    \\
+					 & CG & \textunderscore{}GND 														& 121.975 		   & Ground    \\ 
+					 & \textbf{CT} & \textbf{\textunderscore{}TWR} 										& \textbf{122.925} & \textbf{Tower}           \\ \hline
+\multirow{8}{*}{\rotatebox{90}{APP/CTR}} & \textbf{CA} & \textbf{\textunderscore{}APP} 					& \textbf{125.625} & \textbf{Pickup}   \\ 
+                     & TRLS & P\textunderscore{}APP        												& 124.175          & Leipzig Pickup            \\ 
+                     & MMM  & \textunderscore{}CTR        												& 124.050          & MUN Complete            \\ 
+                     & \textbf{MZ}   & \textbf{\textunderscore{}Z\textunderscore{}CTR}        			& \textbf{134.150} & \textbf{Zugspitze}            \\ 
+                     & \textbf{MR}   & \textbf{\textunderscore{}R\textunderscore{}CTR}        			& \textbf{132.550} & \textbf{Roding}            \\ 
+                     & MG   & \textunderscore{}G\textunderscore{}CTR        							& 133.225          & Gera            \\  
+                     & LKC   & \textunderscore{}CTR        												& 127.125          & Praha            \\  
+                     & LKAA   & \textunderscore{}W\textunderscore{}CTR        							& 120.270          & Praha            \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+
+
+\begin{textblock}{100}(0, 65)
+\begin{table}[]
+\begin{tabular}{lllll}
+\multicolumn{3}{c}{\textbf{Precision Approach}} \\ \hline
+\multicolumn{1}{|l|}{RWY} & \multicolumn{1}{c|}{\textbf{04}} & \multicolumn{1}{c|}{\textbf{22}}\\ \hline
+\multicolumn{1}{|l|}{FREQ} & \multicolumn{1}{l|}{110.50} & \multicolumn{1}{l|}{109.75}\\
+\multicolumn{1}{|l|}{CRS} & \multicolumn{1}{l|}{038$^\circ$} & \multicolumn{1}{l|}{218$^\circ$}\\
+\multicolumn{1}{|l|}{CAT} & \multicolumn{1}{l|}{I} & \multicolumn{1}{l|}{III}\\
+\multicolumn{1}{|l|}{FAP} & \multicolumn{1}{l|}{GOMPA} & \multicolumn{1}{l|}{OKILO} \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(65, 100)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|}
+\multicolumn{4}{c}{\textbf{Handoff Levels}} \\ \hline
+RWY & OSKAN & ABKIS & AGNAV \\ \hline
+\textbf{04} & FL100 & FL160 & FL320\\
+\textbf{22} & FL80 & FL160 & FL320\\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(0, 100)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|}
+\multicolumn{4}{c}{\textbf{Holdings}} \\ \hline
+DRN & GRAKI & RIVSA & ABKIS \\ \hline
+5000 ft & 5000 ft & 5000 ft & FL70  \\
+218$^\circ$ L & 218$^\circ$ L & 299$^\circ$ L & 218$^\circ$ L \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(50, 65)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|}
+\multicolumn{4}{c}{\textbf{Taxi}} \\ \hline
+TWY H & TWY M-blue/orange,  & TWY M-blue/orange & TWY F, G \\ 
+& L, N, P & & \\ \hline
+max 47,5m & Code C & from sunrise/sunset & Helicopter \\
+& & RVR >= 350m  & \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\end{document}

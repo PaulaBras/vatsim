@@ -1,0 +1,88 @@
+\documentclass[10pt,landscape,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Segoe UI}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[landscape,top=0cm,bottom=1cm,right=1cm,left=0cm,noheadfoot,bindingoffset=0pt,marginparwidth=0pt,marginparsep=0pt]{geometry}
+\pagestyle{empty}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage[en-US]{datetime2}
+
+
+\newlength{\Oldarrayrulewidth}
+\newcommand{\Cline}[2]{%
+  \noalign{\global\setlength{\Oldarrayrulewidth}{\arrayrulewidth}}%
+  \noalign{\global\setlength{\arrayrulewidth}{#1}}\cline{#2}%
+  \noalign{\global\setlength{\arrayrulewidth}{\Oldarrayrulewidth}}}
+
+\title{EDDF}
+\author{Paul à Brassard}
+\date{\today}
+
+\begin{document}
+
+\setlength\extrarowheight{1pt}
+
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{7mm}{12mm}
+
+\begin{textblock}{100}(100, -5)
+  \large
+  \centering
+  \textbf{EDDF Special Quicksheet}
+
+ \DTMlangsetup{showdayofmonth=false}
+  \today \space AIRAC 2304
+\end{textblock}
+\begin{textblock}{2}(220, -8)
+  \includegraphics[width=30\textwidth]{VATGer-Logo-Colour}
+\end{textblock}
+
+\begin{textblock}{100}(0,10)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\multicolumn{7}{c}{\textbf{GLS Approach RWY 25}} \\ \hline
+RWY  & \multicolumn{2}{c|}{\textbf{25L}} & \multicolumn{2}{c|}{\textbf{25R}} & \multicolumn{2}{c|}{\textbf{25C}} \\ \hline
+APP  & \textbf{GLS Z} & GLS Y & \textbf{GLS Z} & \textbf{GLS Y} & \textbf{GLS Z} & GLS Y \\
+GBAS & 21570 G25B & 24036 G25F & 20748 G25A & 23214 G25E & 22392 G25D  & 24858 G25G \\
+CRS  & 247$^\circ$/3.0 & 247$^\circ$/3.2 & 247$^\circ$/3.0$^\circ$ & 247$^\circ$/3.2$^\circ$ & 247$^\circ$/3.0$^\circ$ & 247$^\circ$/3.2$^\circ$ \\
+FAP  & DF620 & DF630 & DF420 & DF430 & DF520 & DF530 \\ \hline
+IF   & \multicolumn{2}{c|}{DF389} & \multicolumn{2}{c|}{DF390} & \multicolumn{2}{c|}{DF381} \\ \hline
+\multicolumn{6}{l}{Noth-west Approach will be assigned as the ILS}\\
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(0,48)
+\begin{table}[]
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\multicolumn{7}{c}{\textbf{GLS Approach RWY 07}} \\ \hline
+RWY  & \multicolumn{2}{c|}{\textbf{07R}} & \multicolumn{2}{c|}{\textbf{07L}} & \multicolumn{2}{c|}{\textbf{07C}} \\ \hline
+APP  & \textbf{GLS Z} & GLS Y & \textbf{GLS Z} & \textbf{GLS Y} & \textbf{GLS Z} & GLS Y \\
+GBAS & 21981 G07B & 24447 G07F & 21159 G07A & 23625 G07E & 22803 G07D & 25269 G07G \\
+CRS  & 066$^\circ$/3.0 & 066$^\circ$/3.2 & 066$^\circ$/3.0$^\circ$ & 066$^\circ$/3.2$^\circ$ & 066$^\circ$/3.0$^\circ$ & 066$^\circ$/3.2$^\circ$ \\
+FAP  & DF660 & DF650 & DF460 & DF450 & DF560 & DF550 \\ \hline
+IF   & \multicolumn{2}{c|}{DF377} & \multicolumn{2}{c|}{DF360} & \multicolumn{2}{c|}{DF551} \\ \hline
+\multicolumn{6}{l}{Noth-west Approach will be assigned as the ILS}\\
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\begin{textblock}{100}(0,88)
+\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\multicolumn{3}{c}{\textbf{Non-RNAV}} \\ \hline
+07  & MTR 5C (5000ft)    & RID 8C (4000ft)   \\ \hline
+25  & TAU 2Q (5000ft)    & RID 3Q (5000ft)   \\ \hline
+\end{tabular}
+\end{table}
+\end{textblock}
+
+\end{document}
